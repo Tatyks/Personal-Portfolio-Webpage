@@ -57,7 +57,7 @@ h1 {
     font-weight: 700;
 }
 
-p {
+p.for-section {
     color: var(--headercolor);
     font-size: 1.5rem;
     font-style: italic;
@@ -76,7 +76,12 @@ p {
 h2 {
     font-size: 3rem;
     color: var(--textcolor1);
-    
+}
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 2rem;
+    }
 }
 
 .project-image {
@@ -112,11 +117,3 @@ h2 {
     align-items: center;
 }
 
-#contacts-p {
-    color: var(--headercolor);
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 100;
-    text-align: center;
-
-}
